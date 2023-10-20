@@ -8,7 +8,7 @@ export class AjaxLoaderPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.clickMeButton = page.getByText('CLICK ME!');
+        this.clickMeButton = page.locator('#button1');
         this.confirmationMessage = page.getByRole('heading', { name: 'Well Done For Waiting....!!!' });
         this.closeButton = page.getByRole('button', { name: 'Close' });
     }
